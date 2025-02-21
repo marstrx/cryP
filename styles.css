@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cyan;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.motherBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:  solid 2px rgba(0, 0, 0, 0.45);
+    border-radius: 1em;
+    box-shadow: 14px 17px 21pt rgba(0, 0, 0, 0.452);
+    padding: 3%;
+    background-color: #fff;
+}
+.motherBoard h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.motherBoard img{
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    box-shadow: 14px 17px 21pt rgba(0, 0, 0, 0.452);
+
+}
+.motherBoard h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 4%;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .motherBoard img {
+        max-width: 140px;
+        
+      }
+      .motherBoard h1 {
+        font-size: 30px;
+      }
+      .motherBoard h3 {
+        margin-top: 12%;
+        margin-bottom: 12px;
+      }
+}
