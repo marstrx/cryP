@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin price</title>
+    <title>CryP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="motherBoard">
-        <h1>Bitcoin current price</h1>
-        <img src="IMAGES/bitcoin.jpg" alt="">
-        <h3 id="displayPrice"></h3>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">CryP</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="markets.html">Markets</a>
+                <a href="about.html">About</a>
+            </div>
+            <button class="menu-toggle"><i class="bi bi-list"></i></button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Track Crypto Markets in Real-Time</h1>
+            <p>Discover the latest cryptocurrency prices, market trends, all in one place.</p>
+        </div>
+        <div class="hero-image">
+            <img src="IMAGES/cryptoLogo.jpg" alt="Crypto Illustration" width="400px">
+        </div>
+    </section>
     
+    <section class="loader">
+        <div id="loader"></div>
+        <h3>Loading<span class="dots"></span></h3>
+    </section>
+
+    <main id="cryptoGrid"></main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://x.com/marstr__1?t=uXOF6y39HPSFb-pRJ1PRJA&s=09"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://github.com/marstrx"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/marouane-bachar-02557a277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/chichi.mar.188"><i class="bi bi-facebook"></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

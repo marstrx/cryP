@@ -1,3 +1,16 @@
+const home =document.getElementById("homee");
+const about =document.getElementById("aboutt");
+
+
+homee.addEventListener("click",function(e){
+    e.preventDefault();
+    window.location.href="index.html";
+})
+about.addEventListener("click",function(e){
+    e.preventDefault();
+    window.location.href="about.html";
+})
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const loader = document.getElementsByClassName("loader")[0];
@@ -31,7 +44,7 @@ const colors = [
 async function fetchData() {
   try {
     const response = await fetch(
-      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=1&sparkline=false"
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1000&page=1&sparkline=false"
     );
     const data = await response.json();
 
