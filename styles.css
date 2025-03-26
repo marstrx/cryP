@@ -238,7 +238,7 @@ footer {
 
 @media (max-width: 480px) {
   #cryptoGrid {
-    grid-template-columns: 290px;
+    grid-template-columns: 310px;
   }
 }
 
